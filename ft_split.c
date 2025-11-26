@@ -1,0 +1,107 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: khthiam <khthiam@student.42>               +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/10/15 15:36:20 by khthiam           #+#    #+#             */
+/*   Updated: 2025/11/23 11:49:19 by khthiam          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+
+static int	ft_count_words(const char *s, char c)
+{
+	int	i;
+	int	words;
+
+	i = 0;
+	words = 0;
+	while (s[i])
+	{
+		if (s[i] != c)
+		{
+			words++;
+			while (s[i] && s[i] != c)
+				i++;
+		}
+		else
+			i++;
+	}
+	return (words);
+}
+
+static char	*word_splitter(const char *s, char c)
+{
+	char	*word;
+	int		i;
+
+	i = 0;
+	while (s[i] && s[i] != c)
+		i++;
+	word = (char *) malloc(sizeof(char) * (i + 1));
+	if (!word)
+		return (NULL);
+	i = 0;
+	while (s[i] && s[i] != c)
+	{
+		word[i] = s[i];
+		i++;
+	}
+	word[i] = '\0';
+	return (word);
+}
+
+char	**ft_split(char const *s, char c)
+{
+	int		i;
+	int		j;
+	char	**words;
+
+	i = 0;
+	j = 0;
+	words = (char **) malloc(sizeof(char *) * (ft_count_words(s, c) + 1));
+	if (!words || !s)
+		return (NULL);
+	while (s[i])
+	{
+		if (s[i] != c)
+		{
+			words[j] = word_splitter(&s[i], c);
+			while (s[i] && s[i] != c)
+				i++;
+			j++;
+		}
+		else
+			i++;
+	}
+	words[j] = 0;
+	return (words);
+}
+
+/*
+** ============================================================================
+** MANUAL SECTIONS
+** ============================================================================
+**
+** NAME
+**        ft_split - custom implementation for 42 project
+** 
+** LIBRARY
+**        libft (custom C library)
+** 
+** SYNOPSIS
+**        #include "libft.h"
+** 
+**        (See function prototype in libft.h)
+** 
+** DESCRIPTION
+**        Custom implementation of ft_split for the 42 School libft project.
+**        This is a utility function that is part of the extended libft library.
+**
+** ============================================================================
+** Source: Generated documentation (no manual page available) - 2025-11-23
+** ============================================================================
+*/

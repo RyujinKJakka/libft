@@ -1,0 +1,73 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strtrim.c                                      :+:       :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: khthiam <khthiam@student.42>               +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/10/15 14:26:03 by khthiam           #+#    #+#             */
+/*   Updated: 2025/10/19 14:54:22 by khthiam          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+
+static int	is_set(char c, char const *set)
+{
+	while (*set)
+	{
+		if (c == *set)
+			return (1);
+		set++;
+	}
+	return (0);
+}
+
+char	*ft_strtrim(char const *s1, char const *set)
+{
+	size_t	len;
+	size_t	sublen;
+	char	*trimmed;
+	size_t	i;
+	size_t	j;
+
+	len = ft_strlen(s1);
+	i = 0;
+	while (s1[i] && is_set(s1[i], set))
+		i++;
+	j = len - 1;
+	while (j > i && is_set(s1[j], set))
+		j--;
+	sublen = j - i;
+	trimmed = (char *)malloc(sizeof(char) * (sublen + 2));
+	if (!trimmed)
+		return (NULL);
+	ft_memcpy(trimmed, s1 + i, sublen + 1);
+	trimmed[sublen + 1] = '\0';
+	return (trimmed);
+}
+
+/*
+** ============================================================================
+** MANUAL SECTIONS
+** ============================================================================
+**
+** NAME
+**        ft_strtrim - custom implementation for 42 project
+** 
+** LIBRARY
+**        libft (custom C library)
+** 
+** SYNOPSIS
+**        #include "libft.h"
+** 
+**        (See function prototype in libft.h)
+** 
+** DESCRIPTION
+**        Custom implementation of ft_strtrim for the 42 School libft project.
+**        This is a utility function that is part of the extended libft library.
+**
+** ============================================================================
+** Source: Generated documentation (no manual page available) - 2025-11-23
+** ============================================================================
+*/
