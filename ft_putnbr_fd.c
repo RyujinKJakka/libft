@@ -26,28 +26,3 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd(l / 10, fd);
 	ft_putchar_fd(l % 10 + '0', fd);
 }
-
-/*
-** ============================================================================
-** MANUAL SECTIONS
-** ============================================================================
-**
-** NAME
-**        ft_putnbr_fd - custom implementation for 42 project
-** 
-** LIBRARY
-**        libft (custom C library)
-** 
-** SYNOPSIS
-**        #include "libft.h"
-** 
-**        (See function prototype in libft.h)
-** 
-** DESCRIPTION
-**        Custom implementation of ft_putnbr_fd for the 42 School libft project.
-**        This is a utility function that is part of the extended libft library.
-**
-** ============================================================================
-** Source: Generated documentation (no manual page available) - 2025-11-23
-** ============================================================================
-*/

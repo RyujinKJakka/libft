@@ -23,28 +23,3 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 		}
 	}
 }
-
-/*
-** ============================================================================
-** MANUAL SECTIONS
-** ============================================================================
-**
-** NAME
-**        ft_lstiter - custom implementation for 42 project
-** 
-** LIBRARY
-**        libft (custom C library)
-** 
-** SYNOPSIS
-**        #include "libft.h"
-** 
-**        (See function prototype in libft.h)
-** 
-** DESCRIPTION
-**        Custom implementation of ft_lstiter for the 42 School libft project.
-**        This is a utility function that is part of the extended libft library.
-**
-** ============================================================================
-** Source: Generated documentation (no manual page available) - 2025-11-23
-** ============================================================================
-*/

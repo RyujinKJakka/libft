@@ -30,28 +30,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	concat[len1 + len2] = '\0';
 	return (concat);
 }
-
-/*
-** ============================================================================
-** MANUAL SECTIONS
-** ============================================================================
-**
-** NAME
-**        ft_strjoin - custom implementation for 42 project
-** 
-** LIBRARY
-**        libft (custom C library)
-** 
-** SYNOPSIS
-**        #include "libft.h"
-** 
-**        (See function prototype in libft.h)
-** 
-** DESCRIPTION
-**        Custom implementation of ft_strjoin for the 42 School libft project.
-**        This is a utility function that is part of the extended libft library.
-**
-** ============================================================================
-** Source: Generated documentation (no manual page available) - 2025-11-23
-** ============================================================================
-*/
