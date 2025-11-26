@@ -49,13 +49,13 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 ** 
 ** 
 ** DESCRIPTION
-**        The  memcmp()  function	compares the first n bytes (each interpreted as
-**        unsigned char) of the memory areas s1 and s2.
-** 
-** 
+**        The  memcmp()  function	compares the first n bytes (each
+**        interpreted as unsigned char) of the memory areas s1 and s2.
+**
+**
 ** DESCRIPTION
-**        The  memcmp()  function	compares the first n bytes (each interpreted as
-**        unsigned char) of the memory areas s1 and s2.
+**        The  memcmp()  function	compares the first n bytes (each
+**        interpreted as unsigned char) of the memory areas s1 and s2.
 **
 ** ============================================================================
 ** Source: man memcmp - Extracted on 2025-11-23

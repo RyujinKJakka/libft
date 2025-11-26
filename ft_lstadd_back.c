@@ -46,8 +46,9 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 **        (See function prototype in libft.h)
 ** 
 ** DESCRIPTION
-**        Custom implementation of ft_lstadd_back for the 42 School libft project.
-**        This is a utility function that is part of the extended libft library.
+**        Custom implementation of ft_lstadd_back for the 42 School libft
+**        project. This is a utility function that is part of the extended
+**        libft library.
 **
 ** ============================================================================
 ** Source: Generated documentation (no manual page available) - 2025-11-23

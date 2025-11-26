@@ -6,7 +6,7 @@
 /*   By: khthiam <khthiam@student.42>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 17:58:29 by khthiam           #+#    #+#             */
-/*   Updated: 2025/11/23 12:18:51 by khthiam          ###   ########.fr       */
+/*   Updated: 2025/11/26 14:56:57 by khthiam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,14 +47,14 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 ** 
 ** 
 ** DESCRIPTION
-**        The memcpy() function copies n bytes from memory area src to memory area
-**        dest.   The memory areas must not overlap.  Use memmove(3) if the memory
-**        areas do overlap.
+** The memcpy() function copies n bytes from memory area src to memory area
+** dest.   The memory areas must not overlap.  Use memmove(3) if the memory
+** areas do overlap.
 ** 
 ** 
 ** DESCRIPTION
-**        The memcpy() function copies n bytes from memory area src to memory area
-**        dest.   The memory areas must not overlap.  Use memmove(3) if the memory
+**   The memcpy() function copies n bytes from memory area src to memory area
+**  dest.   The memory areas must not overlap.  Use memmove(3) if the memory
 **        areas do overlap.
 **
 ** ============================================================================

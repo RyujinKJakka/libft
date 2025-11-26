@@ -42,13 +42,13 @@ size_t	ft_strlen(const char *s)
 ** 
 ** 
 ** DESCRIPTION
-**        The  strlen() function calculates the length of the string pointed to by
-**        s, excluding the terminating null byte ('\0').
-** 
-** 
+**        The  strlen() function calculates the length of the string pointed
+**        to by s, excluding the terminating null byte ('\0').
+**
+**
 ** DESCRIPTION
-**        The  strlen() function calculates the length of the string pointed to by
-**        s, excluding the terminating null byte ('\0').
+**        The  strlen() function calculates the length of the string pointed
+**        to by s, excluding the terminating null byte ('\0').
 **
 ** ============================================================================
 ** Source: man strlen - Extracted on 2025-11-23

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                         :+:       :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: khthiam <khthiam@student.42>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 17:05:00 by khthiam           #+#    #+#             */
-/*   Updated: 2025/10/19 14:17:21 by khthiam          ###   ########.fr       */
+/*   Updated: 2025/11/26 14:47:40 by khthiam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,33 +57,33 @@ int	ft_atoi(const char *nptr)
 ** 
 **        atoll():
 ** 	   _ISOC99_SOURCE
-** 	       || /* glibc <= 2.19: */ _BSD_SOURCE || _SVID_SOURCE
+** 	       || (glibc <= 2.19:  _BSD_SOURCE || _SVID_SOURCE)
 ** 
 ** 
 ** DESCRIPTION
-**        The  atoi()  function converts the initial portion of the string pointed
-**        to by nptr to int.  The behavior is the same as
-** 
+**        The  atoi()  function converts the initial portion of the string
+**        pointed to by nptr to int.  The behavior is the same as
+**
 ** 	   strtol(nptr, NULL, 10);
-** 
+**
 **        except that atoi() does not detect errors.
-** 
-**        The atol() and atoll() functions behave the same as atoi(), except  that
-**        they  convert  the initial portion of the string to their return type of
-**        long or long long.
+**
+**        The atol() and atoll() functions behave the same as atoi(),
+**        except that they convert the initial portion of the string to
+**        their return type of long or long long.
 ** 
 ** 
 ** DESCRIPTION
-**        The  atoi()  function converts the initial portion of the string pointed
-**        to by nptr to int.  The behavior is the same as
-** 
+**        The  atoi()  function converts the initial portion of the string
+**        pointed to by nptr to int.  The behavior is the same as
+**
 ** 	   strtol(nptr, NULL, 10);
-** 
+**
 **        except that atoi() does not detect errors.
-** 
-**        The atol() and atoll() functions behave the same as atoi(), except  that
-**        they  convert  the initial portion of the string to their return type of
-**        long or long long.
+**
+**        The atol() and atoll() functions behave the same as atoi(),
+**        except that they convert the initial portion of the string to
+**        their return type of long or long long.
 **
 ** ============================================================================
 ** Source: man atoi - Extracted on 2025-11-23
